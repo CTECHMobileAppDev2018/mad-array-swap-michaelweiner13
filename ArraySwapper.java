@@ -1,7 +1,6 @@
 class ArraySwapper {
 
   public int[] arraySwap(int []inputArray) {
-
     // Swap the two items in "inputArray" and return the output
     int[] outputArray = new int[2];
 
@@ -13,7 +12,6 @@ class ArraySwapper {
 
     // Return the new, swapped array
     return outputArray;
-
   }
 
   public static void main(String[] args) {
