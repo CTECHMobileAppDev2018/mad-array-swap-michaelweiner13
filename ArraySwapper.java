@@ -15,14 +15,14 @@ class Main {
   // This method swaps any 2 items in any array
   public void arraySwapAny2(int []inputArray, int loc1, int loc2) {
     
-    // Swap the two items in "inputArray" and return the output
-    // Remember to make sure that loc1 and loc2 are valid positions in the array!
+    // Initialize a variable 'temp' to help switch the values of the arrays
     int temp;
-
+    
+    // First check to make sure that 'loc1' and 'loc2' are both greater than zero AND less than the array's length
     if ((loc1 > 0 && loc1 < inputArray.length) && (loc2 > 0 && loc2 < inputArray.length)) {
-      temp = inputArray[loc1];
-      inputArray[loc1] = inputArray[loc2];
-      inputArray[loc2] = temp;
+      temp = inputArray[loc1]; // Store the first value to be switched into 'temp'
+      inputArray[loc1] = inputArray[loc2]; // Switch the first location with the second
+      inputArray[loc2] = temp; // Set the second location's value to the value of the first position through 'temp'
     }
   }
 
@@ -65,5 +65,3 @@ class Main {
     }
   }
 }
-
-
